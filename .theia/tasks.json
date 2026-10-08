@@ -1,0 +1,53 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "MSPM0: Build Debug",
+      "type": "shell",
+      "command": "C:\\ti\\ccs2031\\ccs\\utils\\bin\\gmake.exe",
+      "args": [
+        "-C",
+        "${workspaceFolder}\\Debug",
+        "all"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "MSPM0: Flash XDS110",
+      "type": "shell",
+      "command": "C:\\ti\\ccs2031\\ccs\\ccs_base\\DebugServer\\bin\\DSLite.exe",
+      "args": [
+        "flash",
+        "-c",
+        "${workspaceFolder}\\targetConfigs\\MSPM0G3507.ccxml",
+        "-f",
+        "-v",
+        "-r",
+        "1",
+        "-u",
+        "-e",
+        "${workspaceFolder}\\Debug\\empty_LP_MSPM0G3507_nortos_ticlang.out"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "dependsOrder": "sequence",
+      "dependsOn": [
+        "MSPM0: Build Debug"
+      ],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "empty_LP_MSPM0G3507_nortos_ticlang",
+      "type": "ccs-debug",
+      "request": "launch",
+      "preLaunchTask": "MSPM0: Build Debug",
+      "projectInfo": {
+        "name": "empty_LP_MSPM0G3507_nortos_ticlang",
+        "resourceId": "/empty_LP_MSPM0G3507_nortos_ticlang"
+      }
+    }
+  ]
+}
