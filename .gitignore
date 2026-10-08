@@ -1,0 +1,38 @@
+# CCS / SysConfig build outputs
+/Debug/
+/Release/
+/Objects/
+/Listings/
+/ti_msp_dl_config.c
+/ti_msp_dl_config.h
+/device_linker.cmd
+*.o
+*.obj
+*.out
+*.elf
+*.axf
+*.map
+*.d
+*.hex
+*.bin
+
+# Generated editor and Python caches
+/.clangd
+/.cache/
+__pycache__/
+*.py[cod]
+
+# Local experiments, debug workspaces, and review artifacts
+/.codex_*/
+/.docx_review/
+/.agents/
+/true
+
+# Local credentials and tuning logs
+.env
+.env.*
+!.env.example
+llm_pid_tuner_config.json
+/logs/
+*.log
+
